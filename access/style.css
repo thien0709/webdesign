@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 :root{
-    -
+    --gray: #23272E;
+    --white: #D1D1D1;
+    --orange:#f05123;
+    --blue:#03e9f4;
+    --blue1:#93BFCF;
+    --pink: #FBC5C5;
+    --green:#00ff55;
+    --red: #E96479;  
 }
 html{
 
@@ -13,9 +20,28 @@ html{
 
 }
 #navbar{
-    width: 100vh;
-    height: 3rem;
-    background-color: var();
+    width: 100vw;
+    height: 4rem;
+    background-color: var(--gray);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+#navbar .logo img{
+    height: 4rem;
+    padding: 0.5rem 2rem;
+}
+#navbar .login button{
+    width: 4rem;
+    height: 2rem;
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 #content{
 
